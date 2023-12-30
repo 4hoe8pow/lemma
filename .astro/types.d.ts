@@ -185,22 +185,15 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"author": {
-"yu-tokunaga.md": {
-	id: "yu-tokunaga.md";
-  slug: "yu-tokunaga";
+"tokunaga.md": {
+	id: "tokunaga.md";
+  slug: "tokunaga";
   body: string;
   collection: "author";
   data: InferEntrySchema<"author">
 } & { render(): Render[".md"] };
 };
 "blog": {
-"engineering-blog.md": {
-	id: "engineering-blog.md";
-  slug: "engineering-blog";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "first-post.md": {
 	id: "first-post.md";
   slug: "first-post";
@@ -208,60 +201,11 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"markdown-style-guide.md": {
-	id: "markdown-style-guide.md";
-  slug: "markdown-style-guide";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"second-post.md": {
-	id: "second-post.md";
-  slug: "second-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"third-post.md": {
-	id: "third-post.md";
-  slug: "third-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"using-mdx.mdx": {
-	id: "using-mdx.mdx";
-  slug: "using-mdx";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
 };
 "topic": {
-"ai.md": {
-	id: "ai.md";
-  slug: "ai";
-  body: string;
-  collection: "topic";
-  data: InferEntrySchema<"topic">
-} & { render(): Render[".md"] };
-"docs.md": {
-	id: "docs.md";
-  slug: "docs";
-  body: string;
-  collection: "topic";
-  data: InferEntrySchema<"topic">
-} & { render(): Render[".md"] };
-"front-end.md": {
-	id: "front-end.md";
-  slug: "front-end";
-  body: string;
-  collection: "topic";
-  data: InferEntrySchema<"topic">
-} & { render(): Render[".md"] };
-"user-experience.md": {
-	id: "user-experience.md";
-  slug: "user-experience";
+"bevy.md": {
+	id: "bevy.md";
+  slug: "bevy";
   body: string;
   collection: "topic";
   data: InferEntrySchema<"topic">

@@ -7,8 +7,7 @@ import { SITE_URL } from "./src/consts.ts";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://hoe-rake.github.io',
-  base: '/tokunaga',
+  site: SITE_URL,
   integrations: [
     mdx(),
     sitemap(),
