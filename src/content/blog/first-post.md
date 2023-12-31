@@ -3,7 +3,7 @@ title: 'ゲーム開発をはじめるにあたって'
 topics: ['welcome']
 authors:
     - tokunaga
-description: '自動販売機が主役のゲームをつくりはじめました'
+description: 'README'
 pubDate: 'Dec 30 2023'
 heroImage: '/placeholder-hero.jpg'
 ---
