@@ -1,18 +1,18 @@
 ---
-import Layout from "../layouts/Page.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import LatestPosts from "../components/LatestPosts.astro";
-import { Image } from "astro:assets";
-import heroImage from "../../public/placeholder-social.jpg";
+import Layout from '../layouts/Page.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import LatestPosts from '../components/LatestPosts.astro'
+import { Image } from 'astro:assets'
+import heroImage from '../../public/placeholder-social.jpg'
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <Image
-    width={668}
-    height={310}
-    src={heroImage}
-    alt="Astro Engineering Blog template: Multiple authors, co-authoring, topics, search, and more"
-  />
+    <Image
+        width={668}
+        height={310}
+        src={heroImage}
+        alt="Astro Engineering Blog template: Multiple authors, co-authoring, topics, search, and more"
+    />
 
-  <LatestPosts />
+    <LatestPosts />
 </Layout>

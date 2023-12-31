@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection, getEntryBySlug } from 'astro:content'
 
 /**
  * This component expects either a list of topics as a prop, or an explicit 'all' to render all topics.
@@ -9,41 +9,39 @@ import { getCollection, getEntryBySlug } from "astro:content";
  */
 
 export interface Props {
-  class?: string;
-  topics: "all" | string[];
+    class?: string
+    topics: 'all' | string[]
 }
 
-const { class: className = "", topics = [] } = Astro.props;
+const { class: className = '', topics = [] } = Astro.props
 
-let topicsFromProps = undefined;
-if (topics !== "all") {
-  topicsFromProps = await Promise.all(
-    topics.map((topic) => getEntryBySlug("topic", topic))
-  );
+let topicsFromProps = undefined
+if (topics !== 'all') {
+    topicsFromProps = await Promise.all(topics.map((topic) => getEntryBySlug('topic', topic)))
 }
 
-const allTopics = (await getCollection("topic")).sort((a, b) => {
-  if (a.data.title < b.data.title) {
-    return -1;
-  }
-  if (a.data.title > b.data.title) {
-    return 1;
-  }
-  return 0;
-});
+const allTopics = (await getCollection('topic')).sort((a, b) => {
+    if (a.data.title < b.data.title) {
+        return -1
+    }
+    if (a.data.title > b.data.title) {
+        return 1
+    }
+    return 0
+})
 
-const renderTopics = topics === "all" ? allTopics : topicsFromProps;
+const renderTopics = topics === 'all' ? allTopics : topicsFromProps
 ---
 
 <ul class={className}>
-  {
-    !!renderTopics &&
-      renderTopics
-        .filter((topic) => !!topic?.slug && !!topic?.data.title)
-        .map((topic) => (
-          <li>
-            <a href={`/topics/${topic?.slug}/`}>{topic?.data.title}</a>
-          </li>
-        ))
-  }
+    {
+        !!renderTopics &&
+            renderTopics
+                .filter((topic) => !!topic?.slug && !!topic?.data.title)
+                .map((topic) => (
+                    <li>
+                        <a href={`/topics/${topic?.slug}/`}>{topic?.data.title}</a>
+                    </li>
+                ))
+    }
 </ul>

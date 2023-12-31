@@ -1,7 +1,7 @@
 ---
 firstname: Yu
 lastname: Tokunaga
-avatar: "../../assets/images/author/anonymous.jpg"
+avatar: '../../assets/images/author/anonymous.jpg'
 x: https://x.com/agni_kabaddi
 github: https://github.com/hoe-rake
 ---
