@@ -8,6 +8,7 @@ import AuthorList from '../components/AuthorList.astro'
 import TopicList from '../components/TopicList.astro'
 import { Image } from 'astro:assets'
 import { ViewTransitions } from 'astro:transitions'
+import { BRAND } from '../consts'
 
 type Props = CollectionEntry<'blog'>['data']
 
@@ -16,7 +17,7 @@ const { title, description, pubDate, updatedDate, heroImage, authors, topics } =
 
 <html lang="en">
     <head>
-        <BaseHead title={title} description={description} />
+        <BaseHead title={`${title} | ${BRAND}`} description={description} />
         <ViewTransitions />
     </head>
 
