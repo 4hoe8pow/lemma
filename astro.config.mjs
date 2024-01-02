@@ -5,10 +5,13 @@ import solidJs from '@astrojs/solid-js'
 import tailwind from '@astrojs/tailwind'
 import { SITE_URL } from './src/consts.ts'
 import partytown from '@astrojs/partytown'
+import expressiveCode from 'astro-expressive-code'
 
+// https://astro.build/config
 export default defineConfig({
     site: SITE_URL,
     integrations: [
+        expressiveCode(),
         mdx(),
         sitemap(),
         solidJs({
