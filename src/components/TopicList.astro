@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content'
+import { getCollection, getEntry } from 'astro:content'
 
 /**
  * This component expects either a list of topics as a prop, or an explicit 'all' to render all topics.
@@ -17,7 +17,7 @@ const { class: className = '', topics = [] } = Astro.props
 
 let topicsFromProps = undefined
 if (topics !== 'all') {
-    topicsFromProps = await Promise.all(topics.map((topic) => getEntryBySlug('topic', topic)))
+    topicsFromProps = await Promise.all(topics.map((topic) => getEntry('topic', topic)))
 }
 
 const allTopics = (await getCollection('topic')).sort((a, b) => {

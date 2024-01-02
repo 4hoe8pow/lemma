@@ -1,5 +1,5 @@
 ---
-import { getEntryBySlug, getCollection } from 'astro:content'
+import { getCollection, getEntry } from 'astro:content'
 import Heading from './Heading.astro'
 import { Image } from 'astro:assets'
 
@@ -11,7 +11,7 @@ export interface Props {
 
 const { authorId, showPosts, headingLevel = 2 } = Astro.props
 
-const entry = await getEntryBySlug('author', authorId)
+const entry = await getEntry('author', authorId)
 if (!entry) {
     throw new Error(`Author with id ${authorId} not found`)
 }

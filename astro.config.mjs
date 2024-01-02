@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap'
 import solidJs from '@astrojs/solid-js'
 import tailwind from '@astrojs/tailwind'
 import { SITE_URL } from './src/consts.ts'
+import partytown from '@astrojs/partytown'
 
 export default defineConfig({
     site: SITE_URL,
@@ -14,5 +15,11 @@ export default defineConfig({
             include: '**.tsx',
         }),
         tailwind(),
+        partytown({
+            // Adds dataLayer.push as a forwarding-event.
+            config: {
+                forward: ['dataLayer.push'],
+            },
+        }),
     ],
 })

@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content'
+import { getCollection, getEntry } from 'astro:content'
 import AuthorInfo from './AuthorInfo.astro'
 
 /**
@@ -20,7 +20,7 @@ const { class: className = '', authors = [], showPosts = false, headingLevel = 2
 
 let authorsFromProps = undefined
 if (authors !== 'all') {
-    authorsFromProps = await Promise.all(authors.map((author) => getEntryBySlug('author', author)))
+    authorsFromProps = await Promise.all(authors.map((author) => getEntry('author', author)))
 }
 
 const allauthors = await getCollection('author')
