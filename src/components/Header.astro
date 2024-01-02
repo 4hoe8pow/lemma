@@ -56,8 +56,8 @@ const topics = await getCollection('topic')
                 <ul
                     class="m-0 flex list-none flex-col items-start gap-2 px-2 py-4 pb-8 md:flex-row md:items-center md:justify-between md:p-0 md:py-2"
                 >
+                    <HeaderLink href="/about">About</HeaderLink>
                     <HeaderLink href="/blog">Blog</HeaderLink>
-                    <HeaderLink href="/authors">Authors</HeaderLink>
                     <HeaderDropdown href="/topics" linkText="Topics">
                         {
                             topics.map((topic) => (
@@ -67,8 +67,10 @@ const topics = await getCollection('topic')
                             ))
                         }
                     </HeaderDropdown>
-                    <HeaderLink href="/about">About</HeaderLink>
-                    <HeaderLink href="https://github.com/hoe-rake" target="_blank">GitHub</HeaderLink>
+                    <HeaderDropdown linkText="Stores">
+                        <HeaderDropdownLink href="https://4hoe.itch.io/">itch.io</HeaderDropdownLink>
+                        <HeaderDropdownLink href="https://store.steampowered.com/">Steam</HeaderDropdownLink>
+                    </HeaderDropdown>
                     <HeaderLink href="/search">
                         <span class="mr-2 md:sr-only">Search</span>
                         <svg
