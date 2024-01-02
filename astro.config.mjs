@@ -22,4 +22,8 @@ export default defineConfig({
             },
         }),
     ],
+    i18n: {
+        defaultLocale: 'ja',
+        locales: ['ja', 'en', 'fr', 'pt-br', 'es'],
+    },
 })
