@@ -4,4 +4,25 @@ title: 'About'
 description: 'About Me'
 ---
 
-To-Do
+## Profiles
+
+|||
+|-|-|
+|Name|Yu Tokunaga|
+|Hometown|Nichinan City, Miyazaki Prefecture, Japan|
+|Year of Birth|1994|
+|Sports Experience|Table Tennis, Ice Hockey, Kabbadi|
+|Adored Language|Rust|
+|Technical Stack |Rust, Bevy, Next.js, Tauri, React, Typescript, Astro, Java, VB.NET, Solid.js, Supabase, C|
+
+## Equipments (As of 2024)
+
+|||
+|-|-|
+|Manufacturer|GMK|
+|System Model|NucBox 10|
+|OS|Windows 11 Pro|
+|Processor|AMD Ryzen 7 5800U 16CPUs 19GHz|
+|RAM|DDR4-3200 SO-DIMM 8 GB × 2 (16GB)|
+|DirectX|12|
+|GPU|Built-in CPU|
