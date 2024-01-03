@@ -26,3 +26,10 @@ description: 'About Me'
 | RAM          | DDR4-3200 SO-DIMM 8 GB × 2 (16GB) |
 | DirectX      | 12                                |
 | GPU          | Built-in CPU                      |
+
+## Repositories
+
+| Name                                           | Description                     |
+| ---------------------------------------------- | ------------------------------- |
+| [Chimera](https://github.com/hoe-rake/chimera) | Crazy Vending Machine Automaton |
+|                                                |                                 |
