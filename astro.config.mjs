@@ -1,11 +1,13 @@
-import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
+import partytown from '@astrojs/partytown'
 import sitemap from '@astrojs/sitemap'
 import solidJs from '@astrojs/solid-js'
 import tailwind from '@astrojs/tailwind'
-import { SITE_URL } from './src/consts.ts'
-import partytown from '@astrojs/partytown'
+import { defineConfig } from 'astro/config'
 import expressiveCode from 'astro-expressive-code'
+import icon from 'astro-icon'
+
+import { SITE_URL } from './src/consts.ts'
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,6 +26,7 @@ export default defineConfig({
                 forward: ['dataLayer.push'],
             },
         }),
+        icon(),
     ],
     i18n: {
         defaultLocale: 'ja',

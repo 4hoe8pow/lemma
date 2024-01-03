@@ -1,7 +1,8 @@
 ---
+import { type CollectionEntry, getCollection } from 'astro:content'
+
 import PostList from '../../components/PostList.astro'
 import Layout from '../../layouts/Page.astro'
-import { type CollectionEntry, getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
     const topics = await getCollection('topic')

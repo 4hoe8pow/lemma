@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/Page.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
-import LatestPosts from '../components/LatestPosts.astro'
 import { Image } from 'astro:assets'
+
 import heroImage from '../../public/placeholder-social.jpg'
+import LatestPosts from '../components/LatestPosts.astro'
+import { SITE_DESCRIPTION,SITE_TITLE } from '../consts'
+import Layout from '../layouts/Page.astro'
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>

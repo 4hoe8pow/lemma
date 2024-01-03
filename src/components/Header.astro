@@ -1,10 +1,11 @@
 ---
-import HeaderLink from './HeaderLink.astro'
-import HeaderDropdownLink from './HeaderDropdownLink.astro'
-import { SITE_TITLE } from '../consts'
-import HeaderDropdown from './HeaderDropdown.astro'
 import { getCollection } from 'astro:content'
+
+import { SITE_TITLE } from '../consts'
 import DarkModeToggle from './DarkModeToggle.astro'
+import HeaderDropdown from './HeaderDropdown.astro'
+import HeaderDropdownLink from './HeaderDropdownLink.astro'
+import HeaderLink from './HeaderLink.astro'
 
 const topics = await getCollection('topic')
 ---

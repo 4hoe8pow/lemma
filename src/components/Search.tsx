@@ -1,7 +1,8 @@
-import type { CollectionEntry } from 'astro:content'
-import Fuse from 'fuse.js'
-import { Show, createSignal, createMemo, createEffect, onMount } from 'solid-js'
 import { PostListItem } from './PostListItem'
+import Fuse from 'fuse.js'
+import { Show, createEffect, createMemo, createSignal, onMount } from 'solid-js'
+
+import type { CollectionEntry } from 'astro:content'
 
 const options = {
     keys: ['data.title', 'data.description', 'slug'],

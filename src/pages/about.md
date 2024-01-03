@@ -11,7 +11,7 @@ description: 'About Me'
 | Name              | Yu Tokunaga                                                                               |
 | Hometown          | Nichinan City, Miyazaki, Japan                                                            |
 | Year of Birth     | 1994                                                                                      |
-| Sports Experience | Table Tennis, Ice Hockey, Kabbadi                                                         |
+| Sports Experience | Table Tennis, Ice Hockey, Kabaddi                                                         |
 | Adored Language   | Rust                                                                                      |
 | Technical Stack   | Rust, Bevy, Next.js, Tauri, React, Typescript, Astro, Java, VB.NET, Solid.js, Supabase, C |
 
