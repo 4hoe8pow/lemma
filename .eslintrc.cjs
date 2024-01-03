@@ -1,5 +1,5 @@
 module.exports = {
-    root: true,
+    plugins: ['simple-import-sort'],
     extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:astro/recommended'],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -8,6 +8,10 @@ module.exports = {
     },
     globals: {
         astroHTML: true,
+    },
+    rules: {
+        'simple-import-sort/imports': 'error',
+        'simple-import-sort/exports': 'error',
     },
     overrides: [
         {
