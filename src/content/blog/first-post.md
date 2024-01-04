@@ -1,6 +1,6 @@
 ---
 title: '🦺 ゲーム開発をはじめるにあたって'
-topics: ['welcome']
+topics: ['0_welcome']
 authors:
     - tokunaga
 description: 'README'
@@ -25,18 +25,22 @@ heroImage: '/placeholder-hero.jpg'
 当初，Unreal Engine 5 で開発を進めるつもるでしたが，PC スペック都合で諦めました．
 EZbench というベンチマークソフトでPC の能力を計測した結果，616 という愛くるしいスコアを叩き出してしまったためです．
 (理想は30000 以上)
-![img](/img/spec2312.png)
+![img](../../assets/images/20231230/spec2312.png)
 
 というのも，愛機にはグラボを搭載しておらず，CPU 内蔵GPU のため致し方ありません．
-本来こういったハイスペックが要求される作業には向かないミニPC のため，しばらくは [**Bevy**](https://bevyengine.org/) に頼ります．
+本来こういったハイスペックが要求される作業には向かないミニPC のため，しばらくは [Bevy](https://bevyengine.org/) に頼ります．
+結局ビルドするときにBevy だろうと負担は掛かるのですが，[UE5](https://www.unrealengine.com/ja/unreal-engine-5)や[Unity](https://unity.com/ja)はシーンエディタが含まれるので，開発中も止まってしまいます（笑）．
+Bevy で開発する際にはVS Code でRust のコードだけ見ていれば良いので，個人的に楽なのです．
+グラボ無しPC でゲーム開発しようとする方もなかなかいないと思うので一般の方にはUnity がおすすめです．
+ドキュメントが多いので始めやすいでしょう．
 
 ## 準備
 
 下記の準備は完了済みとしてこれから記事を投稿していくため，詳細は割愛いたします．
 
--   [Rust](https://www.rust-lang.org/ja/tools/install) のインストール
--   [VS Code](https://code.visualstudio.com/download) のインストール
--   [Bevy](https://bevyengine.org/learn/book/getting-started/) 利用のための諸準備
--   Windows 11 を搭載したPC
+- [Rust](https://www.rust-lang.org/ja/tools/install) のインストール
+- [VS Code](https://code.visualstudio.com/download) のインストール
+- [Bevy](https://bevyengine.org/learn/book/getting-started/) 利用のための諸準備
+- Windows 11 を搭載したPC
 
 以上，楽しんでいきましょう．
