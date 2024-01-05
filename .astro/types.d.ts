@@ -208,6 +208,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"20240105.md": {
+	id: "20240105.md";
+  slug: "20240105";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "first-post.md": {
 	id: "first-post.md";
   slug: "first-post";
@@ -231,9 +238,16 @@ declare module 'astro:content' {
   collection: "topic";
   data: InferEntrySchema<"topic">
 } & { render(): Render[".md"] };
-"2_workout.md": {
-	id: "2_workout.md";
-  slug: "2_workout";
+"1a_chimera.md": {
+	id: "1a_chimera.md";
+  slug: "1a_chimera";
+  body: string;
+  collection: "topic";
+  data: InferEntrySchema<"topic">
+} & { render(): Render[".md"] };
+"1b_bhuvco.md": {
+	id: "1b_bhuvco.md";
+  slug: "1b_bhuvco";
   body: string;
   collection: "topic";
   data: InferEntrySchema<"topic">
