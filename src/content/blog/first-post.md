@@ -38,9 +38,9 @@ Bevy で開発する際にはVS Code でRust のコードだけ見ていれば�
 
 下記の準備は完了済みとしてこれから記事を投稿していくため，詳細は割愛いたします．
 
-- [Rust](https://www.rust-lang.org/ja/tools/install) のインストール
-- [VS Code](https://code.visualstudio.com/download) のインストール
-- [Bevy](https://bevyengine.org/learn/book/getting-started/) 利用のための諸準備
-- Windows 11 を搭載したPC
+-   [Rust](https://www.rust-lang.org/ja/tools/install) のインストール
+-   [VS Code](https://code.visualstudio.com/download) のインストール
+-   [Bevy](https://bevyengine.org/learn/book/getting-started/) 利用のための諸準備
+-   Windows 11 を搭載したPC
 
 以上，楽しんでいきましょう．
