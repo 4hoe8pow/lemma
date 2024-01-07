@@ -33,4 +33,4 @@ description: 'About Me'
 | ------------------------------------------------------ | ------------------------------- |
 | [Chimera](https://github.com/hoe-rake/chimera)         | Crazy Vending Machine Automaton |
 | [Bhuv Corporation](https://github.com/hoe-rake/bhuvco) | Bhuv detectives work            |
-|                                                        |                                 |
+| [Elepaz](https://github.com/hoe-rake/elepaz)           | Pazzle                          |
