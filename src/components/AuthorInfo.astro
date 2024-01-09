@@ -19,11 +19,6 @@ if (!entry) {
 
 const { Content } = await entry.render()
 const { firstname, lastname, avatar, github, linkedin, x } = entry.data
-const socials = [
-    { name: 'Github', url: github },
-    { name: 'LinkedIn', url: linkedin },
-    { name: 'X', url: x },
-].filter((social) => social.url)
 
 const posts = await getCollection('blog')
 const authorPosts = posts
@@ -52,23 +47,6 @@ const authorPosts = posts
                             <li>
                                 <a class="text-link no-underline hover:underline" href={post.url}>
                                     {post.data.title}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </>
-            )
-        }
-
-        {
-            socials.length > 0 && (
-                <>
-                    <p class="mb-0">My links</p>
-                    <ul class="m-0 flex list-none gap-4 p-0">
-                        {socials.map((social) => (
-                            <li>
-                                <a class="text-link no-underline hover:underline" href={social.url}>
-                                    {social.name}
                                 </a>
                             </li>
                         ))}
