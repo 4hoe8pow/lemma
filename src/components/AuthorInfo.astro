@@ -18,7 +18,7 @@ if (!entry) {
 }
 
 const { Content } = await entry.render()
-const { firstname, lastname, avatar, github, linkedin, x } = entry.data
+const { firstname, lastname, avatar } = entry.data
 
 const posts = await getCollection('blog')
 const authorPosts = posts

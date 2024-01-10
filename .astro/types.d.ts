@@ -180,23 +180,16 @@ declare module 'astro:content' {
                 collection: 'blog'
                 data: InferEntrySchema<'blog'>
             } & { render(): Render['.md'] }
-            '20240105.md': {
-                id: '20240105.md'
-                slug: '20240105'
-                body: string
-                collection: 'blog'
-                data: InferEntrySchema<'blog'>
-            } & { render(): Render['.md'] }
-            '20240105a.md': {
-                id: '20240105a.md'
-                slug: '20240105a'
-                body: string
-                collection: 'blog'
-                data: InferEntrySchema<'blog'>
-            } & { render(): Render['.md'] }
             '20240107.md': {
                 id: '20240107.md'
                 slug: '20240107'
+                body: string
+                collection: 'blog'
+                data: InferEntrySchema<'blog'>
+            } & { render(): Render['.md'] }
+            '20240110.md': {
+                id: '20240110.md'
+                slug: '20240110'
                 body: string
                 collection: 'blog'
                 data: InferEntrySchema<'blog'>
@@ -224,30 +217,16 @@ declare module 'astro:content' {
                 collection: 'topic'
                 data: InferEntrySchema<'topic'>
             } & { render(): Render['.md'] }
-            '1a_chimera.md': {
-                id: '1a_chimera.md'
-                slug: '1a_chimera'
+            '1a_dharma.md': {
+                id: '1a_dharma.md'
+                slug: '1a_dharma'
                 body: string
                 collection: 'topic'
                 data: InferEntrySchema<'topic'>
             } & { render(): Render['.md'] }
-            '1b_bhuvco.md': {
-                id: '1b_bhuvco.md'
-                slug: '1b_bhuvco'
-                body: string
-                collection: 'topic'
-                data: InferEntrySchema<'topic'>
-            } & { render(): Render['.md'] }
-            '1c_elepaz.md': {
-                id: '1c_elepaz.md'
-                slug: '1c_elepaz'
-                body: string
-                collection: 'topic'
-                data: InferEntrySchema<'topic'>
-            } & { render(): Render['.md'] }
-            '2_magicavoxel.md': {
-                id: '2_magicavoxel.md'
-                slug: '2_magicavoxel'
+            '1b_chimera.md': {
+                id: '1b_chimera.md'
+                slug: '1b_chimera'
                 body: string
                 collection: 'topic'
                 data: InferEntrySchema<'topic'>
