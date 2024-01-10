@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content'
 import Fuse from 'fuse.js'
-import { createEffect, createMemo, createSignal, onMount,Show } from 'solid-js'
+import { createEffect, createMemo, createSignal, onMount, Show } from 'solid-js'
 
 import { PostListItem } from './PostListItem'
 
