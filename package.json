@@ -5,7 +5,7 @@
     "author": "Yu Tokunaga",
     "repository": {
         "type": "git",
-        "url": "https://hoe-rake.github.com/lemma"
+        "url": "https://4hoe8pow.github.com/lemma"
     },
     "scripts": {
         "dev": "astro dev",
