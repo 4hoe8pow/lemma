@@ -1,0 +1,96 @@
+---
+title: '🐣 設定関連'
+topics: ['1a_dharma']
+authors:
+    - tokunaga
+description: '.dotfiles'
+pubDate: 'Jan 12 2024'
+heroImage: '/img/hex.jpg'
+---
+
+## wsl2
+
+```sh
+wsl --install
+```
+
+## ターミナル
+
+1. [Alacritty](https://alacritty.org/)をダウンロード
+2. 設定ファイルを追加．
+
+```toml title="~/AppData/Roaming/alacritty/alacritty.toml"
+[colors.bright]
+black = "0x808080"
+blue = "0x0066ff"
+cyan = "0x00ffff"
+green = "0x33ff00"
+magenta = "0xcc00ff"
+red = "0xfe0100"
+white = "0xFFFFFF"
+yellow = "0xfeff00"
+
+[colors.cursor]
+cursor = "0xffffff"
+text = "0xF81CE5"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x0066ff"
+cyan = "0x00ffff"
+green = "0x33ff00"
+magenta = "0xcc00ff"
+red = "0xfe0100"
+white = "0xd0d0d0"
+yellow = "0xfeff00"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xffffff"
+
+[mouse]
+hide_when_typing = false
+
+[[mouse.bindings]]
+action = "Copy"
+mods = "Shift"
+mouse = "Left"
+
+[[mouse.bindings]]
+action = "Paste"
+mods = "Shift"
+mouse = "Right"
+
+[shell]
+program = "/Windows/System32/wsl.exe ~ -d Ubuntu"
+
+[window]
+opacity = 0.62
+
+```
+
+3. 起動後に更新
+
+```sh
+sudo snap refresh
+sudo apt update
+sudo apt install make
+```
+
+## Rust
+
+```sh
+curl --proto '=https' --tlsv1.2 0sSf https://sh.rustup.rs | sh
+```
+
+## Neovim
+
+```sh
+sudo snap install --beta nvim --classic
+```
+
+## LazyVim
+
+```sh
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
